@@ -17,7 +17,12 @@ A local Python desktop application designed to identify and redact Personally Id
    cd LegalDocRedactor
    ```
 
-2. Run the setup script to create a virtual environment and install dependencies:
+2. **(Linux Only)** Install required system libraries:
+   ```bash
+   sudo apt-get install libxcb-cursor0
+   ```
+
+3. Run the setup script to create a virtual environment and install dependencies:
    ```bash
    chmod +x setup_env.sh
    ./setup_env.sh
@@ -38,6 +43,14 @@ A local Python desktop application designed to identify and redact Personally Id
 
 - Python 3.9+
 - See `requirements.txt` for full list of dependencies.
+
+## Troubleshooting
+
+### Linux: "Could not load the Qt platform plugin 'xcb'"
+If you encounter this error, you are missing a system library required by newer versions of Qt. Install it using:
+```bash
+sudo apt-get install libxcb-cursor0
+```
 
 ## License
 
