@@ -13,8 +13,8 @@ A local Python desktop application designed to identify and redact Personally Id
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/flyinknut/LegalDocRedactor.git
-   cd LegalDocRedactor
+   git clone https://github.com/smithmau5/LegalRedactor.git
+   cd LegalRedactor
    ```
 
 2. **(Linux Only)** Install required system libraries:
